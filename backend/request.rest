@@ -1,0 +1,43 @@
+// Create User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Maul",
+    "email": "maul@gmail.com",
+    "password": "123",
+    "confPassword": "123",
+    "role": "admin"
+}
+
+###
+// Get All data User
+GET http://localhost:5000/users
+Content-Type: application/json
+
+###
+// Get Single User
+GET http://localhost:5000/users/1b686d74-d58b-474e-bc44-74ffc70a366f
+
+###
+// Update User
+PATCH http://localhost:5000/users/56228436-09a2-4bbd-b65a-53bbcc032ebd
+Content-Type: application/json
+
+{
+    "name": "Maul JHON1",
+    "email": "maul@gmail.com",
+    "password": null,
+    "confPassword": null,
+    "role": "admin"
+}
+
+###
+// Login
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "email": "maul@gmail.com",
+    "password": "123"
+}
